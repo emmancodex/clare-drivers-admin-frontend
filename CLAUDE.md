@@ -2,7 +2,7 @@
 
 ## Stack
 - Vue 3 (Composition API + `<script setup>`)
-- PrimeVue 4 (UI components)
+- PrimeVue 5 (UI components)
 - Vue Router
 - Pinia (state management)
 - Vite (build tool)

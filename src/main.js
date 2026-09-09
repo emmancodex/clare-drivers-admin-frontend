@@ -45,10 +45,15 @@ app.use(router)
 app.use(ToastService)
 app.use(ConfirmationService)
 app.use(PrimeVue, {
+  license: import.meta.env.VITE_PRIMEVUE_LICENSE_KEY,
   theme: {
     preset: ClarePreset,
     options: {
       darkModeSelector: false,
+      cssLayer: {
+        name: 'primevue',
+        order: 'tailwind-base, primevue, tailwind-utilities',
+      },
     },
   },
   ripple: true,
