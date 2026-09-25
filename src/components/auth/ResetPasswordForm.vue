@@ -170,7 +170,7 @@ async function requestResetCodeHandler() {
       @click="onSubmit"
     />
 
-    <RouterLink :to="{ name: 'forgot-password' }" class="text-sm text-center">
+    <RouterLink :to="{ name: 'forgot-password' }" class="text-sm text-center no-underline">
       Didn't get a code? Request a new one
     </RouterLink>
   </div>

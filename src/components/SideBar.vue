@@ -27,7 +27,7 @@ const currentPageName = computed(
 
 <template>
   <div
-    class="border border-surface-500 rounded-none md:rounded-lg max-w-screen-lg mx-auto flex items-stretch h-screen overflow-hidden"
+    class="md:border md:border-surface-500 rounded-none md:rounded-lg max-w-screen-lg mx-auto flex items-stretch h-screen overflow-hidden"
   >
     <SidebarLayout class="min-h-0">
       <Sidebar id="side-bar">

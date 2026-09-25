@@ -2,3 +2,12 @@
 
 @import 'tailwindcss/theme.css' layer(tailwind-base);
 @import 'tailwindcss/utilities.css' layer(tailwind-utilities);
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans Variable', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Preflight isn't imported, so apply the font to the page ourselves. */
+html {
+  font-family: var(--font-sans);
+}

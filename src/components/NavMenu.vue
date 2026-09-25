@@ -48,7 +48,7 @@ const visibleNavItems = computed(() =>
               <template #default="{ class: buttonClass, a11yAttrs }">
                 <RouterLink
                   :to="item.path"
-                  :class="buttonClass"
+                  :class="[buttonClass, 'no-underline']"
                   v-bind="a11yAttrs"
                   @click="emit('item-click', item)"
                 >

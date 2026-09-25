@@ -20,7 +20,7 @@ const { user } = storeToRefs(useAuthStore())
           <template #default="{ class: buttonClass, a11yAttrs }">
             <RouterLink
               :to="{ name: 'profile' }"
-              :class="buttonClass"
+              :class="[buttonClass, 'no-underline']"
               v-bind="a11yAttrs"
               @click="emit('item-click')"
             >

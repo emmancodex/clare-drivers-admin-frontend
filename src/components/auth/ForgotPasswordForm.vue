@@ -73,7 +73,7 @@ async function onSubmit() {
       @click="onSubmit"
     />
 
-    <RouterLink :to="{ name: 'login' }" class="text-sm text-center">
+    <RouterLink :to="{ name: 'login' }" class="text-sm text-center no-underline">
       Back to log in
     </RouterLink>
   </div>

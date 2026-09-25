@@ -137,7 +137,7 @@ async function onSubmit() {
 
     <p class="w-full text-sm text-center">
       Already have an account?
-      <RouterLink :to="{ name: 'login' }" class="text-sm text-center underline text-blue-600">
+      <RouterLink :to="{ name: 'login' }" class="text-sm text-center no-underline text-blue-600">
         Log in
       </RouterLink>
     </p>

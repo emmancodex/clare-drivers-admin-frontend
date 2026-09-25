@@ -99,7 +99,7 @@ async function onSubmit() {
     <div class="flex w-full justify-end">
       <RouterLink
         :to="{ name: 'forgot-password' }"
-        class="text-sm text-center underline text-blue-600"
+        class="text-sm text-center no-underline text-blue-600"
       >
         Forgot password?
       </RouterLink>
@@ -115,7 +115,7 @@ async function onSubmit() {
 
     <p class="w-full text-sm text-center">
       Don't have an account?
-      <RouterLink :to="{ name: 'register' }" class="text-sm text-center underline text-blue-600">
+      <RouterLink :to="{ name: 'register' }" class="text-sm text-center no-underline text-blue-600">
         Register
       </RouterLink>
     </p>

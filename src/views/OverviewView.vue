@@ -76,7 +76,7 @@ onMounted(getOverview)
 </script>
 
 <template>
-  <div class="p-4 flex flex-col gap-4">
+  <div class="p-2 flex flex-col gap-4">
     <div class="flex justify-end">
       <Button
         label="Refresh"
@@ -87,7 +87,11 @@ onMounted(getOverview)
         @click="refreshOverview"
       >
         <template #icon>
-          <ProgressSpinner v-if="isRefreshing" style="width: 16px; height: 16px" stroke-width="6" />
+          <ProgressSpinner
+            v-if="isRefreshing"
+            style="width: 16px; height: 16px"
+            :stroke-width="6"
+          />
           <IconReload v-else :size="16" />
         </template>
       </Button>
